@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf");
+}
+
+$font-montserrar: 'Montserrat',
+sans-serif;
+$font-georgia: 'Georgia',
+sans-serif;
+
+
+
+/* Global padding */
+$paddingSection: 100px;
+
+/* palette color */
+$primary: #20c997;
+$primary-light: #79dfc1;
+$primary-dark: #1aa179;
+
+
+/* basic colors */
+$white: #fff;
+$black: #000;

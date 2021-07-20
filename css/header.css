@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* basic colors */
+.navbar {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.collapse {
+  display: flex;
+  justify-content: flex-end; }
+
+.img-logo {
+  width: 150px; }
+
+.img-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.btn-registar {
+  background: #20c997;
+  color: #fff;
+  outline: none; }
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none; }

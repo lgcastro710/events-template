@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* basic colors */
+.contenedor {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 73px);
+  display: flex; }
+
+.section-1 {
+  width: 190px;
+  background: #20c997;
+  background: linear-gradient(100deg, #20c997 31%, #79dfc1 80%);
+  height: 100vh;
+  transform: rotate(25deg);
+  bottom: 300px;
+  left: 0;
+  position: absolute; }
+
+.section-2 {
+  width: 100px;
+  background: #1aa179;
+  background: linear-gradient(100deg, #1aa179 31%, #79dfc1 80%);
+  height: 100vh;
+  transform: rotate(25deg);
+  bottom: 60px;
+  left: 60px;
+  position: absolute; }
+
+.section-3 {
+  width: 600px;
+  background: #000000a8;
+  height: 200vh;
+  transform: rotate(25deg);
+  bottom: 0;
+  right: 0px;
+  top: -180px;
+  position: absolute; }
+
+.section-4 {
+  width: 160px;
+  background: #1aa179;
+  background: linear-gradient(100deg, #1aa179 31%, #79dfc1 80%);
+  height: 100vh;
+  transform: rotate(25deg);
+  top: 100px;
+  right: -180px;
+  position: absolute; }

@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import "./functions.scss";
+
+.bg {
+    margin-top: 74px;
+    height: 100vh;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+    filter: none;
+}
+
+.carousel-dark .carousel-caption {
+    color: #1aa179;
+    text-align: left;
+
+    h5 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.content-corousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ver {
+    background: $primary;
+    color: $white;
+    outline: none;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}

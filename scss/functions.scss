@@ -1,0 +1,19 @@
+@import "./variables";
+
+//mixins
+@mixin fontStyle($family: $font-montserrar, $size: 14, $color: $white, $weight: 100, $style: normal) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin flexAlign($direction:'column', $align: 'center', $justify: 'center') {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+//@extends

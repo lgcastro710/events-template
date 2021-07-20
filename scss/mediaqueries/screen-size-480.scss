@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../functions";
+
+@media (min-width: 315px) and (max-width: 600px) {
+
+  // &--subtitle {
+  //   @include fontStyle($font-montserrar, 18px, #fff, lighter);
+  //   line-height: 24px;
+  //   padding: 0 35px;
+  // }
+  .section-1 {
+    width: 40px;
+  }
+
+  .section-2 {
+    width: 50px;
+    bottom: 340px;
+  }
+
+  .section-3 {
+    width: 200px;
+  }
+
+  .section-4 {
+    width: 140px;
+  }
+
+}

@@ -1,0 +1,40 @@
+@import "./variables.scss";
+@import "./functions.scss";
+
+.navbar {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-logo {
+    width: 150px;
+}
+
+.img-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-registar {
+    background: $primary;
+    color: $white;
+    outline: none;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
