@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+.bg-section {
+  background-image: url("../assets/images/fondo-herramientas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+
+.card-tabs {
+  padding: 2.5rem 40px;
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51); }
+
+.nav-tabs {
+  max-width: 400px;
+  margin: auto;
+  display: flow-root; }
+
+.nav-tabs .nav-link {
+  font-size: 1.4rem;
+  background-color: #fff;
+  border: 1px solid #4194d8;
+  color: #4194d8;
+  padding: 10px 5px;
+  cursor: pointer;
+  float: left;
+  transition: background-color 0.2s;
+  width: 50%; }
+  .nav-tabs .nav-link:hover {
+    background: #236da9;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.2s; }
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #4194d8;
+  border-color: #236da9; }
+
+.tab-content {
+  padding-top: 30px; }

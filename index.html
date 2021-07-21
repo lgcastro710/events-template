@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
-          type="text/css">    
+          type="text/css">  
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <!-- Owl Stylesheets -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <title>Home</title>
@@ -17,45 +22,50 @@
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <img class="img-logo" src="../assets/images/header/logo-rt.svg" alt="logo-rt">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item p-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item p-2">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item p-2">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown p-2">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item p-2">
-              <button class="btn btn-registar">
-              Registrar</button>
-          </li>
-          <li class="nav-item p-2">
-            <img class="img-profile" src="../assets/images/header/profile.jpg" alt="">
-          </li>
-        </ul>
+    <div class="container">
+      <div class="container-fluid">
+        <div class="logobutton">
+          <img class="img-logo" src="../assets/images/header/logo-rt.svg" alt="logo-rt">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item p-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown p-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item p-2">
+                <button class="btn btn-registar">
+                Registrar</button>
+            </li>
+            <li class="nav-item p-2">
+              <img class="img-profile" src="../assets/images/header/profile.jpg" alt="">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
     <section class="bg">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="container">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -93,25 +103,168 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon text-white" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon text-white" aria-hidden="true">
+            <img src="../assets/images/arrow-left.svg" alt="">
+          </span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon text-white" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon text-white" aria-hidden="true">
+            <img src="../assets/images/arrow-right.svg" alt="">
+          </span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
   
 </section>
 
+    <div class="bg-section">
+    <div class="container">
+        <div class="card-tabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Temporibus minus illum rem vel deleniti? Asperiores ut, 
+                        sunt mollitia labore illum quo incidunt? Quod alias dolore, 
+                        animi odio maxime veritatis numquam?</p>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Temporibus minus illum rem vel deleniti? Asperiores ut, 
+                        sunt mollitia labore illum quo incidunt? Quod alias dolore, 
+                        animi odio maxime veritatis numquam?.
+                        Temporibus minus illum rem vel deleniti? Asperiores ut, 
+                        sunt mollitia labore illum quo incidunt? Quod alias dolore, 
+                        animi odio maxime veritatis numquam?</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+    <section class="news">
+    <div class="container">
+        <h1 class="news__title">Lo que se viene</h1>
+        <div class="owl-carousel owl-theme">
+            <div class="news__item"><h4>Cambios en MercadoLibre</h4></div>
+            <div class="news__item"><h4>Día del Padre</h4></div>
+            <div class="news__item"><h4>Pagá menos retenciones</h4></div>
+            <div class="news__item"><h4>Hot Sale</h4></div>
+            <div class="news__item"><h4>Mercado Crédito</h4></div>
+            <div class="news__item"><h4>5 claves para preparar tu tienda online</h4></div>
+            <div class="news__item"><h4>Cómo evitar estafas en Mercado Libre</h4></div>
+            <div class="news__item"><h4>Novedades en flex</h4></div>
+            <div class="news__item"><h4>Optimizá tu negocio</h4></div>
+        </div>
+    </div>
+    </section>
 
+
+<div class="contac">
+    <div class="container support">
+        <div class="doubts">
+            <span>¿Te quedaron dudas?</span>
+            <button class="btn chat-w">Chatea con Nosotros</button>
+        </div>
+        <div class="contact-details">
+            <div class="email-address">
+                <span>contacto@real-trends.com</span>
+            </div>
+            <div class="other-contact">
+                <p>Lunes a viernes de 10-13 / 15-18 h</p>
+                <div class="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Escribinos al <a href="">+5491121711009</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <footer class="footer">
+    <div class="container">
+       <div class="footer-content">
+        <div class="item">
+            <h3>Contenido</h3>
+            <ul>
+                <li class="">
+                    <a class=""  href="#">Home</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#">Features</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="#">Pricing</a>
+                  </li>
+            </ul>
+        </div>
+        <div class="redes">
+            <h3>Siguenos:</h3>
+            <ul>
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Facebook</span>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </li>
+                <li>
+                    <i class="fab fa-twitter-square"></i>
+                    <span>Twitter</span>
+                </li>
+            </ul>
+        </div>
+        <div class="logo-footer">
+            <img src="../assets/images/header/logo-rt.svg" alt="">
+        </div>
+       </div>
+       <div class="copy-right">
+           <span>Copyright © 2014-2021 Real Trends SRL. Real Trends es una marca registrada. Todos los derechos reservados.</span>
+       </div>
+    </div>
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src=" https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "> </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  // A $( document ).ready() block.
+  $( document ).ready(function() {
+    console.log( "ready!" );
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      dots:true,
+      margin:10,
+      autoplay:true,
+      slideTransition:'linear',
+      nav:false,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:3
+        }
+      }
+    })
+  });
+</script>
 </body>
 
 </html>

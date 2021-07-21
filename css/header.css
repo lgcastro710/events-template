@@ -6,12 +6,14 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 .navbar {
@@ -24,9 +26,19 @@
   left: 0;
   z-index: 1030; }
 
+.container-fluid {
+  display: flex; }
+
+.nav-item {
+  text-align: end; }
+
 .collapse {
   display: flex;
   justify-content: flex-end; }
+
+.logobutton {
+  display: flex;
+  justify-content: space-between; }
 
 .img-logo {
   width: 150px; }
@@ -37,7 +49,7 @@
   border-radius: 50%; }
 
 .btn-registar {
-  background: #20c997;
+  background: #4194d8;
   color: #fff;
   outline: none; }
 

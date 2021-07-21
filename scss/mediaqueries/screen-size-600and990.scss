@@ -1,0 +1,39 @@
+@import "../variables";
+@import "../functions";
+
+@media (min-width: 600px) and (max-width: 990px) {
+    .container-fluid {
+        display: block;
+    }
+
+    .support {
+        display: block;
+    }
+
+    .doubts {
+        padding: 10px;
+
+        span {
+            padding: 0 20px 0 0;
+        }
+    }
+
+    .contact-details {
+        display: block;
+        padding: 10px;
+    }
+
+    .email-address {
+        padding: 0 0 20px 0;
+        border-left: 0;
+    }
+
+    .other-contact {
+        border-left: 0;
+        padding: 0 0 20px 0;
+    }
+
+    .footer-content {
+        display: block;
+    }
+}

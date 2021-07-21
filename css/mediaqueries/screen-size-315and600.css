@@ -17,12 +17,22 @@
 /* palette color */
 /* basic colors */
 @media (min-width: 315px) and (max-width: 600px) {
-  .section-1 {
-    width: 40px; }
-  .section-2 {
-    width: 50px;
-    bottom: 340px; }
-  .section-3 {
-    width: 200px; }
-  .section-4 {
-    width: 140px; } }
+  .container-fluid {
+    display: block; }
+  .support {
+    display: block; }
+  .doubts {
+    padding: 10px; }
+    .doubts span {
+      padding: 0 20px 0 0; }
+  .contact-details {
+    display: block;
+    padding: 10px; }
+  .email-address {
+    padding: 0 0 20px 0;
+    border-left: 0; }
+  .other-contact {
+    border-left: 0;
+    padding: 0 0 20px 0; }
+  .footer-content {
+    display: block; } }

@@ -10,11 +10,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 @font-face {
@@ -23,12 +30,17 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
+body {
+  font-family: 'Roboto', sans-serif; }
+
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 @font-face {
@@ -36,6 +48,7 @@
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 .navbar {
@@ -48,9 +61,19 @@
   left: 0;
   z-index: 1030; }
 
+.container-fluid {
+  display: flex; }
+
+.nav-item {
+  text-align: end; }
+
 .collapse {
   display: flex;
   justify-content: flex-end; }
+
+.logobutton {
+  display: flex;
+  justify-content: space-between; }
 
 .img-logo {
   width: 150px; }
@@ -61,7 +84,7 @@
   border-radius: 50%; }
 
 .btn-registar {
-  background: #20c997;
+  background: #4194d8;
   color: #fff;
   outline: none; }
 
@@ -76,6 +99,7 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
 @font-face {
   font-family: "Georgia";
@@ -83,10 +107,16 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
 .bg {
   margin-top: 74px;
-  height: 100vh; }
+  height: 100vh;
+  background-image: url(https://www.real-trends.com/assets/img/home/fondo-opemulti.png);
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  align-items: center; }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #fff; }
@@ -95,11 +125,18 @@
 .carousel-dark .carousel-control-prev-icon {
   filter: none; }
 
+.carousel-control-prev-icon {
+  background-image: url("../assets/arrow-left.svg"); }
+
+.carousel-control-next-icon {
+  background-image: url("../assets/arrow-right.svg"); }
+
 .carousel-dark .carousel-caption {
-  color: #1aa179;
-  text-align: left; }
+  color: #585757;
+  text-align: right;
+  bottom: 30%; }
   .carousel-dark .carousel-caption h5 {
-    font-size: 6rem; }
+    font-size: 3rem; }
   .carousel-dark .carousel-caption p {
     font-size: 1.5rem; }
 
@@ -109,14 +146,18 @@
   align-items: center; }
 
 .btn-ver {
-  background: #20c997;
+  background-color: #4194d8;
   color: #fff;
   outline: none; }
 
+.btn-ver:hover {
+  background: #236da9;
+  color: #fff; }
+
 .btn-check:focus + .btn,
 .btn:focus {
-  outline: 0;
-  box-shadow: none; }
+  background: #236da9;
+  color: #fff; }
 
 @font-face {
   font-family: "Georgia";
@@ -124,56 +165,65 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 .contenedor {
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 73px);
+  height: 500px;
   display: flex; }
+
+.overly {
+  position: absolute;
+  background-color: #ffffffa6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .section-1 {
   width: 190px;
-  background: #20c997;
-  background: linear-gradient(100deg, #20c997 31%, #79dfc1 80%);
-  height: 100vh;
-  transform: rotate(25deg);
-  bottom: 300px;
+  background: #77c1ab;
+  height: 829px;
+  transform: rotate(25deg) translate(-223px, 0px);
   left: 0;
+  top: -125px;
   position: absolute; }
 
 .section-2 {
   width: 100px;
-  background: #1aa179;
-  background: linear-gradient(100deg, #1aa179 31%, #79dfc1 80%);
-  height: 100vh;
-  transform: rotate(25deg);
-  bottom: 60px;
-  left: 60px;
-  position: absolute; }
+  background: #c9e9de;
+  transform: rotate(25deg) translate(-410px, 0px);
+  left: 0;
+  height: 2500px !important;
+  position: absolute;
+  top: -80px; }
 
 .section-3 {
-  width: 600px;
-  background: #000000a8;
-  height: 200vh;
-  transform: rotate(25deg);
+  width: 50%;
+  background: #f8f9fa;
+  background-image: url("https://www.real-trends.com/assets/img/home/hero-fondo.png");
+  background-position: left center;
+  height: 2000px;
+  transform: rotate(25deg) translate(-255px, 0px);
   bottom: 0;
   right: 0px;
-  top: -180px;
+  top: -250px;
   position: absolute; }
 
 .section-4 {
   width: 160px;
-  background: #1aa179;
-  background: linear-gradient(100deg, #1aa179 31%, #79dfc1 80%);
+  background: #77c1ab;
   height: 100vh;
-  transform: rotate(25deg);
+  transform: rotate(25deg) translate(-161px, 0px);
   top: 100px;
   right: -180px;
   position: absolute; }
@@ -184,24 +234,254 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+.bg-section {
+  background-image: url("../assets/images/fondo-herramientas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+
+.card-tabs {
+  padding: 2.5rem 40px;
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51); }
+
+.nav-tabs {
+  max-width: 400px;
+  margin: auto;
+  display: flow-root; }
+
+.nav-tabs .nav-link {
+  font-size: 1.4rem;
+  background-color: #fff;
+  border: 1px solid #4194d8;
+  color: #4194d8;
+  padding: 10px 5px;
+  cursor: pointer;
+  float: left;
+  transition: background-color 0.2s;
+  width: 50%; }
+  .nav-tabs .nav-link:hover {
+    background: #236da9;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.2s; }
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #4194d8;
+  border-color: #236da9; }
+
+.tab-content {
+  padding-top: 30px; }
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+.news {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  flex-direction: column;
+  background-image: url("https://www.real-trends.com/assets/img/home/fondo-herramientas.png");
+  background-size: cover; }
+  .news__title {
+    color: #585757;
+    text-align: center; }
+  .news__item {
+    background: #f4f4f4;
+    background-image: url(https://www.real-trends.com/assets/img/home/fondo-opemulti.png);
+    background-size: contain;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    text-align: center; }
+
+.owl-carousel div:nth-child(2n) > div {
+  background-image: url(https://www.real-trends.com/assets/img/home/hero-fondo.png);
+  background-size: cover; }
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+.contac {
+  background: #DEDEDE; }
+
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.doubts {
+  padding: 30px;
+  display: flex;
+  align-items: center; }
+  .doubts span {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 20px; }
+
+.chat-w {
+  background: #4194d8;
+  color: #fff;
+  outline: none;
+  font-size: 1rem; }
+
+.contact-details {
+  display: flex;
+  padding: 30px; }
+
+.email-address {
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+  border-left: 1px solid;
+  font-size: 1rem; }
+
+.other-contact {
+  border-left: 1px solid;
+  padding: 0 20px; }
+  .other-contact p {
+    margin: 0;
+    font-size: 1rem; }
+
+.whatsapp i {
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+.whatsapp span {
+  text-decoration: none; }
+
+.footer {
+  background: #292828;
+  padding: 100px 40px 10px;
+  box-sizing: border-box; }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.item h3 {
+  color: #fff;
+  font-size: 20px; }
+
+.item ul {
+  padding: 0; }
+  .item ul li {
+    list-style: none;
+    padding: 10px 0; }
+    .item ul li a {
+      text-decoration: none;
+      color: #fff; }
+
+.redes h3 {
+  color: #fff;
+  font-size: 20px; }
+
+.redes ul {
+  padding: 0; }
+  .redes ul li {
+    list-style: none;
+    padding: 10px 0; }
+    .redes ul li i {
+      font-size: 30px;
+      margin-right: 10px;
+      color: #fff; }
+    .redes ul li span {
+      text-decoration: none;
+      color: #fff; }
+
+.logo-footer img {
+  margin-top: -20px; }
+
+.copy-right {
+  border-top: 1px solid #fff;
+  padding: 10px 0; }
+  .copy-right span {
+    color: #fff;
+    font-size: 12px; }
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 @media (min-width: 315px) and (max-width: 600px) {
-  .section-1 {
-    width: 40px; }
-  .section-2 {
-    width: 50px;
-    bottom: 340px; }
-  .section-3 {
-    width: 200px; }
-  .section-4 {
-    width: 140px; } }
+  .container-fluid {
+    display: block; }
+  .support {
+    display: block; }
+  .doubts {
+    padding: 10px; }
+    .doubts span {
+      padding: 0 20px 0 0; }
+  .contact-details {
+    display: block;
+    padding: 10px; }
+  .email-address {
+    padding: 0 0 20px 0;
+    border-left: 0; }
+  .other-contact {
+    border-left: 0;
+    padding: 0 0 20px 0; }
+  .footer-content {
+    display: block; } }
 
 @font-face {
   font-family: "Georgia";
@@ -209,33 +489,33 @@
 
 /* Global padding */
 /* palette color */
+/* palette color */
 /* basic colors */
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
 
 /* Global padding */
+/* palette color */
 /* palette color */
 /* basic colors */
 @media (min-width: 600px) and (max-width: 990px) {
-  .section-1 {
-    width: 100px;
-    height: 100vh;
-    bottom: 300px;
-    left: 0; }
-  .section-2 {
-    width: 70px;
-    height: 100vh;
-    bottom: 240px;
-    left: 60px; }
-  .section-3 {
-    width: 300px;
-    height: 200vh;
-    bottom: 0;
-    right: 0px;
-    top: -180px; }
-  .section-4 {
-    width: 160px;
-    height: 100vh;
-    top: 100px;
-    right: -180px; } }
+  .container-fluid {
+    display: block; }
+  .support {
+    display: block; }
+  .doubts {
+    padding: 10px; }
+    .doubts span {
+      padding: 0 20px 0 0; }
+  .contact-details {
+    display: block;
+    padding: 10px; }
+  .email-address {
+    padding: 0 0 20px 0;
+    border-left: 0; }
+  .other-contact {
+    border-left: 0;
+    padding: 0 0 20px 0; }
+  .footer-content {
+    display: block; } }

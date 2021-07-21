@@ -12,9 +12,22 @@
     z-index: 1030;
 }
 
+.container-fluid {
+    display: flex;
+}
+
+.nav-item {
+    text-align: end;
+}
+
 .collapse {
     display: flex;
     justify-content: flex-end;
+}
+
+.logobutton {
+    display: flex;
+    justify-content: space-between;
 }
 
 .img-logo {
@@ -28,7 +41,7 @@
 }
 
 .btn-registar {
-    background: $primary;
+    background: $secondary;
     color: $white;
     outline: none;
 }

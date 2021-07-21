@@ -4,6 +4,11 @@
 .bg {
     margin-top: 74px;
     height: 100vh;
+    background-image: url(https://www.real-trends.com/assets/img/home/fondo-opemulti.png);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
@@ -15,12 +20,21 @@
     filter: none;
 }
 
+.carousel-control-prev-icon {
+    background-image: url('../assets/arrow-left.svg');
+}
+
+.carousel-control-next-icon {
+    background-image: url('../assets/arrow-right.svg');
+}
+
 .carousel-dark .carousel-caption {
-    color: #1aa179;
-    text-align: left;
+    color: #585757;
+    text-align: right;
+    bottom: 30%;
 
     h5 {
-        font-size: 6rem;
+        font-size: 3rem;
     }
 
     p {
@@ -35,13 +49,18 @@
 }
 
 .btn-ver {
-    background: $primary;
+    background-color: $secondary;
     color: $white;
     outline: none;
 }
 
+.btn-ver:hover {
+    background: $secondary-dark;
+    color: $white;
+}
+
 .btn-check:focus+.btn,
 .btn:focus {
-    outline: 0;
-    box-shadow: none;
+    background: $secondary-dark;
+    color: $white;
 }
