@@ -19,6 +19,21 @@
 .bg-section {
   padding: 100px 0; }
 
+.content__tabs--title {
+  color: #b2b2b2;
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding: 5px 15px; }
+
+.content__tabs--sub-title {
+  color: #b2b2b2;
+  display: inline-block;
+  background-color: #79dfc1;
+  padding: 5px 15px; }
+
+.content__tabs--paragraph {
+  color: #b2b2b2; }
+
 .card-tabs {
   padding: 2.5rem 40px;
   z-index: 9;

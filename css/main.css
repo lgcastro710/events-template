@@ -174,7 +174,7 @@ body {
   background-image: url("/assets/images/arrow-right.svg"); }
 
 .carousel-dark .carousel-caption {
-  color: #585757;
+  color: #b2b2b2;
   text-align: right;
   bottom: 30%; }
   .carousel-dark .carousel-caption h5 {
@@ -287,6 +287,21 @@ body {
 /* basic colors */
 .bg-section {
   padding: 100px 0; }
+
+.content__tabs--title {
+  color: #b2b2b2;
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding: 5px 15px; }
+
+.content__tabs--sub-title {
+  color: #b2b2b2;
+  display: inline-block;
+  background-color: #79dfc1;
+  padding: 5px 15px; }
+
+.content__tabs--paragraph {
+  color: #b2b2b2; }
 
 .card-tabs {
   padding: 2.5rem 40px;
@@ -453,7 +468,18 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 260px; }
+      min-height: 260px;
+      opacity: 0;
+      -webkit-transform: rotate(40deg) scale(0.5);
+      -moz-transform: rotate(40deg) scale(0.5);
+      -ms-transform: rotate(40deg) scale(0.5);
+      -o-transform: rotate(40deg) scale(0.5);
+      transform: rotate(40deg) scale(0.5);
+      -webkit-transition: all 0.8s ease-in-out;
+      -moz-transition: all 0.8s ease-in-out;
+      -ms-transition: all 0.8s ease-in-out;
+      -o-transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out; }
       .talks__gallery--item > img {
         width: 50px;
         height: 50px;
@@ -494,7 +520,7 @@ body {
   background-image: url(https://www.real-trends.com/assets/img/home/fondo-opemulti.png);
   background-size: 100%; }
   .news__title {
-    color: #585757;
+    color: #b2b2b2;
     text-align: center; }
   .news__item {
     background: #f4f4f4;
@@ -507,7 +533,8 @@ body {
     justify-content: center;
     width: 100%;
     height: 200px;
-    text-align: center; }
+    text-align: center;
+    color: #b2b2b2; }
 
 .owl-carousel div:nth-child(2n) > div {
   background-image: url(https://www.real-trends.com/assets/img/home/hero-fondo.png);

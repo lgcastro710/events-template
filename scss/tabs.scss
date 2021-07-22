@@ -5,6 +5,28 @@
     padding: 100px 0;
 }
 
+.content {
+    &__tabs {
+        &--title {
+            color: $gray;
+            display: inline-block;
+            background-color: $gray-light;
+            padding: 5px 15px;
+        }
+
+        &--sub-title {
+            color: $gray;
+            display: inline-block;
+            background-color: $primary-light;
+            padding: 5px 15px;
+        }
+
+        &--paragraph {
+            color: $gray;
+        }
+    }
+}
+
 .card-tabs {
     padding: 2.5rem 40px;
     z-index: 9;

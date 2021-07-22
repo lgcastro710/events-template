@@ -3,7 +3,7 @@
 
 .news {
     &__title {
-        color: #585757;
+        color: $gray;
         text-align: center;
     }
 
@@ -28,6 +28,7 @@
         width: 100%;
         height: 200px;
         text-align: center;
+        color: $gray;
     }
 }
 

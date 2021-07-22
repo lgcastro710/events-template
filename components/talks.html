@@ -20,7 +20,7 @@
                 placeholder="Buscar"
                 ng-change="clearCategory()"
         ><br>
-        <ul class="talks__gallery">
+        <ul class="talks__gallery" id="talks">
             <li class="talks__gallery--item"  ng-repeat="talk in talks | filter:search | filter:searchBtn">
                 <img ng-src="assets/icons/{{talk.category}}.png">
                 <h5>{{talk.name}}</h5>

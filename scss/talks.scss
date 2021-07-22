@@ -80,7 +80,7 @@
             border-radius: 8px;
             @include flexAlign();
             min-height: 260px;
-
+            @include animation();
 
             &>img {
                 width: 50px;
