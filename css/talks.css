@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+.visible {
+  opacity: 1 !important;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none !important; }
+
+.talks {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .talks__categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    overflow: auto; }
+    .talks__categories--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      -webkit-transform: translateX(-40px);
+      -moz-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+      -o-transform: translateX(-40px);
+      transform: translateX(-40px);
+      -webkit-transition: all 0.6s ease-out;
+      -moz-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+      -o-transition: all 0.6s ease-out;
+      transition: all 0.6s ease-out;
+      background-color: transparent;
+      border: 0; }
+      .talks__categories--item > span {
+        font-size: 0.8rem;
+        color: #585757;
+        text-transform: capitalize; }
+      .talks__categories--item > img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 50%; }
+        .talks__categories--item > img:hover {
+          background-color: #dcdcdc; }
+    .talks__categories--item-active > img {
+      background-color: #57ca9773 !important; }
+  .talks__search {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 30px #0000001a;
+    transition: 0.5s;
+    border: 0;
+    outline: 0 !important; }
+    .talks__search:hover {
+      box-shadow: 0px 0px 30px #00000047; }
+  .talks__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+    .talks__gallery--item {
+      list-style: none;
+      background-color: #71d8bf;
+      border: 0;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px; }
+      .talks__gallery--item > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        filter: invert(1); }
+      .talks__gallery--item > h5 {
+        font-size: 1rem; }
+    .talks__gallery li:nth-child(3n+1) {
+      background-color: #79dfc1; }
+    .talks__gallery li:nth-child(3n+2) {
+      background-color: #4194d8; }
+    .talks__gallery li:nth-child(3n+3) {
+      background-color: #b2b2b2; }

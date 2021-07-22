@@ -1,0 +1,109 @@
+@import "./variables.scss";
+@import "./functions.scss";
+
+.visible {
+    opacity: 1 !important;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none !important;
+}
+
+.talks {
+    padding: 5% 0;
+    @include flexAlign();
+
+    &__categories {
+        @include flexAlign(row, center, space-between);
+        text-align: center;
+        width: 100%;
+        overflow: auto;
+
+        &--item {
+            @include flexAlign();
+            @include animation(translateX(-40px), all 0.6s ease-out);
+            background-color: transparent;
+            border: 0;
+
+            &>span {
+                font-size: 0.8rem;
+                color: #585757;
+                text-transform: capitalize;
+            }
+
+            &>img {
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: #dcdcdc;
+                }
+            }
+        }
+
+        &--item-active {
+            &>img {
+                background-color: #57ca9773 !important;
+            }
+        }
+    }
+
+    &__search {
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0;
+        box-shadow: 0px 0px 30px #0000001a;
+        transition: 0.5s;
+        border: 0;
+        outline: 0 !important;
+
+        &:hover {
+            box-shadow: 0px 0px 30px #00000047;
+        }
+    }
+
+    &__gallery {
+        @include gridAlign();
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+        &--item {
+            list-style: none;
+            background-color: #71d8bf;
+            border: 0;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            @include flexAlign();
+            min-height: 260px;
+
+
+            &>img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                filter: invert(1);
+            }
+
+            &>h5 {
+                font-size: 1rem;
+            }
+        }
+
+        & li:nth-child(3n+1) {
+            background-color: $primary-light;
+        }
+
+        & li:nth-child(3n+2) {
+            background-color: $secondary;
+        }
+
+        & li:nth-child(3n+3) {
+            background-color: $gray;
+        }
+    }
+}

@@ -16,6 +16,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
@@ -34,6 +36,19 @@
 /* basic colors */
 body {
   font-family: 'Roboto', sans-serif; }
+
+.animation-title {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
 
 @font-face {
   font-family: "Georgia";
@@ -65,7 +80,22 @@ body {
   display: flex; }
 
 .nav-item {
-  text-align: end; }
+  text-align: end;
+  position: relative; }
+  .nav-item > a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #20c997;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out; }
+  .nav-item > a:hover:before {
+    transform: scaleX(1); }
 
 .collapse {
   display: flex;
@@ -87,6 +117,9 @@ body {
   background: #4194d8;
   color: #fff;
   outline: none; }
+  .btn-registar:hover {
+    background: #236da9;
+    color: #fff; }
 
 .btn-check:focus + .btn,
 .btn:focus {
@@ -112,11 +145,20 @@ body {
 .bg {
   margin-top: 74px;
   height: 100vh;
-  background-image: url(https://www.real-trends.com/assets/img/home/fondo-opemulti.png);
-  background-size: cover;
-  background-position: left;
+  background-image: url(https://blog.real-trends.com/wp-content/uploads/2020/03/01-portada.png);
+  background-size: 100% 180px;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center; }
+  .bg:before {
+    background-image: url("/assets/images/fondo-herramientas.png");
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    background-size: contain; }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #fff; }
@@ -126,10 +168,10 @@ body {
   filter: none; }
 
 .carousel-control-prev-icon {
-  background-image: url("../assets/arrow-left.svg"); }
+  background-image: url("/assets/images/arrow-left.svg"); }
 
 .carousel-control-next-icon {
-  background-image: url("../assets/arrow-right.svg"); }
+  background-image: url("/assets/images/arrow-right.svg"); }
 
 .carousel-dark .carousel-caption {
   color: #585757;
@@ -149,10 +191,9 @@ body {
   background-color: #4194d8;
   color: #fff;
   outline: none; }
-
-.btn-ver:hover {
-  background: #236da9;
-  color: #fff; }
+  .btn-ver:hover {
+    background: #236da9;
+    color: #fff; }
 
 .btn-check:focus + .btn,
 .btn:focus {
@@ -210,7 +251,7 @@ body {
 .section-3 {
   width: 50%;
   background: #f8f9fa;
-  background-image: url("https://www.real-trends.com/assets/img/home/hero-fondo.png");
+  background-image: url("/assets/images/hero-fondo.png");
   background-position: left center;
   height: 2000px;
   transform: rotate(25deg) translate(-255px, 0px);
@@ -245,9 +286,6 @@ body {
 /* palette color */
 /* basic colors */
 .bg-section {
-  background-image: url("../assets/images/fondo-herramientas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 100px 0; }
 
 .card-tabs {
@@ -302,6 +340,133 @@ body {
 
 .tab-content {
   padding-top: 30px; }
+
+.content-waves2 {
+  position: relative;
+  background-color: #ffffff;
+  color: white; }
+
+.waves2 {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 200px;
+  max-height: 250px; }
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+@font-face {
+  font-family: "Georgia";
+  src: url("../assets/fonts/georgia.ttf"); }
+
+/* Global padding */
+/* palette color */
+/* palette color */
+/* basic colors */
+.visible {
+  opacity: 1 !important;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none !important; }
+
+.talks {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .talks__categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    overflow: auto; }
+    .talks__categories--item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      -webkit-transform: translateX(-40px);
+      -moz-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+      -o-transform: translateX(-40px);
+      transform: translateX(-40px);
+      -webkit-transition: all 0.6s ease-out;
+      -moz-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+      -o-transition: all 0.6s ease-out;
+      transition: all 0.6s ease-out;
+      background-color: transparent;
+      border: 0; }
+      .talks__categories--item > span {
+        font-size: 0.8rem;
+        color: #585757;
+        text-transform: capitalize; }
+      .talks__categories--item > img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 50%; }
+        .talks__categories--item > img:hover {
+          background-color: #dcdcdc; }
+    .talks__categories--item-active > img {
+      background-color: #57ca9773 !important; }
+  .talks__search {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 30px #0000001a;
+    transition: 0.5s;
+    border: 0;
+    outline: 0 !important; }
+    .talks__search:hover {
+      box-shadow: 0px 0px 30px #00000047; }
+  .talks__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0; }
+    .talks__gallery--item {
+      list-style: none;
+      background-color: #71d8bf;
+      border: 0;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px; }
+      .talks__gallery--item > img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        filter: invert(1); }
+      .talks__gallery--item > h5 {
+        font-size: 1rem; }
+    .talks__gallery li:nth-child(3n+1) {
+      background-color: #79dfc1; }
+    .talks__gallery li:nth-child(3n+2) {
+      background-color: #4194d8; }
+    .talks__gallery li:nth-child(3n+3) {
+      background-color: #b2b2b2; }
 
 @font-face {
   font-family: "Georgia";
@@ -386,6 +551,9 @@ body {
   color: #fff;
   outline: none;
   font-size: 1rem; }
+  .chat-w:hover {
+    background: #236da9;
+    color: #fff; }
 
 .contact-details {
   display: flex;
@@ -453,7 +621,8 @@ body {
       color: #fff; }
 
 .logo-footer img {
-  margin-top: -20px; }
+  margin-top: -20px;
+  width: 200px; }
 
 .copy-right {
   border-top: 1px solid #fff;
@@ -461,6 +630,52 @@ body {
   .copy-right span {
     color: #fff;
     font-size: 12px; }
+
+.content-waves {
+  position: relative;
+  background-color: #ffffff;
+  color: white; }
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 200px;
+  max-height: 250px; }
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; }
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s; }
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s; }
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s; }
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s; }
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0); }
+  100% {
+    transform: translate3d(85px, 0, 0); } }
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px; } }
 
 @font-face {
   font-family: "Georgia";
@@ -496,6 +711,8 @@ body {
   .other-contact {
     border-left: 0;
     padding: 0 0 20px 0; }
+  .redes ul li i {
+    font-size: 20px; }
   .footer-content {
     display: block; } }
 
@@ -533,5 +750,7 @@ body {
   .other-contact {
     border-left: 0;
     padding: 0 0 20px 0; }
+  .redes li i {
+    font-size: 20px; }
   .footer-content {
     display: block; } }

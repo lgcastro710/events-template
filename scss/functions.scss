@@ -9,11 +9,32 @@
   font-style: $style;
 }
 
-@mixin flexAlign($direction:'column', $align: 'center', $justify: 'center') {
+@mixin flexAlign($direction:column, $align: center, $justify: center) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
   justify-content: $justify;
+}
+
+@mixin gridAlign($templateColumn:4, $columnGap: 20px, $rowGap: 20px) {
+  display: grid;
+  grid-template-columns: repeat($templateColumn, 1fr);
+  grid-column-gap: $columnGap;
+  grid-row-gap: $rowGap;
+}
+
+@mixin animation($transform:rotate(40deg) scale(0.5), $transition:all 0.8s ease-in-out) {
+  opacity: 0;
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
 }
 
 //@extends

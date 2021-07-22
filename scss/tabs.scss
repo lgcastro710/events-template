@@ -2,9 +2,6 @@
 @import "./functions.scss";
 
 .bg-section {
-    background-image: url("../assets/images/fondo-herramientas.png");
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 100px 0;
 }
 
@@ -70,4 +67,20 @@
 
 .tab-content {
     padding-top: 30px;
+}
+
+.content-waves2 {
+    position: relative;
+    background-color: #ffffff;
+    color: white;
+}
+
+.waves2 {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 200px;
+    max-height: 250px;
 }

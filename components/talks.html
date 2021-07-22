@@ -1,0 +1,31 @@
+<section class="talks"
+     ng-app="myApp" ng-controller="myCtrl">
+    <div class="container">
+        <div class="talks__categories">
+            <button
+                    ng-class="[{
+                    'talks__categories--item': true,
+                    'talks__categories--item-active': category === searchBtn
+                    }]"
+                    ng-click="setCategory(category)"
+                    ng-repeat="category in categories">
+                <img ng-src="assets/icons/{{category}}.png">
+                <span>{{category}}</span>
+            </button>
+        </div>
+        <input
+                class="talks__search"
+                type="text"
+                ng-model="search"
+                placeholder="Buscar"
+                ng-change="clearCategory()"
+        ><br>
+        <ul class="talks__gallery">
+            <li class="talks__gallery--item"  ng-repeat="talk in talks | filter:search | filter:searchBtn">
+                <img ng-src="assets/icons/{{talk.category}}.png">
+                <h5>{{talk.name}}</h5>
+                <span>{{talk.speaker}}</span>
+            </li>
+        </ul>
+    </div>
+</section>
