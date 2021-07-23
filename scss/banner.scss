@@ -11,7 +11,7 @@
     align-items: center;
 
     &:before {
-        background-image: url("/assets/images/fondo-herramientas.png");
+        background-image: url("../assets/images/fondo-herramientas.png");
         content: '';
         position: absolute;
         width: 100%;
@@ -32,11 +32,11 @@
 }
 
 .carousel-control-prev-icon {
-    background-image: url("/assets/images/arrow-left.svg");
+    background-image: url("../assets/images/arrow-left.svg");
 }
 
 .carousel-control-next-icon {
-    background-image: url("/assets/images/arrow-right.svg");
+    background-image: url("../assets/images/arrow-right.svg");
 
 }
 
