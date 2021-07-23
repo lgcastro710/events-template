@@ -53,8 +53,14 @@
               </ul>
             </li>
             <li class="nav-item p-2">
-                <button class="btn btn-registar">
-                Registrar</button>
+                <button class="btn blob-btn">
+                Registrar
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  </span>
+                  </span></button>
             </li>
             <li class="nav-item p-2">
               <img class="img-profile" object-fit: cover; src="assets/images/header/profile.jpg" alt="">
@@ -74,7 +80,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="contenedor">
-    <img src="assets/images/event-expo.jpg" object-fit: cover; class="d-block w-100" alt="...">
+    <img src="assets/images/event-expo.jpg" class="d-block w-100" alt="...">
     <div class="section-1"></div>
     <div class="section-2"></div>
     <div class="section-3"></div>
@@ -85,7 +91,14 @@
               <h1>Finanzas</h1>
               <p>Las finanzas estudian cómo los agentes económicos (empresas, familias o Estado) deben tomar 
                 decisiones de inversión, ahorro y gasto en condiciones de incertidumbre.</p>
-              <button class="btn btn-ver">Ver más</button>
+              <button class="btn blob-btn">Ver más
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  </span>
+                  </span>
+              </button>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">  
@@ -101,7 +114,14 @@
               <h1>Social Media</h1>
               <p>Los medios sociales se basan en la influencia y la interacción entre
                  una audiencia pública que es cada vez más inteligente y participativa.</p>
-            <button class="btn btn-ver">Ver más</button>
+            <button class="btn  blob-btn">Ver más
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                </span>
+                </span>
+            </button>
             </div>
           </div>
         </div>
@@ -126,12 +146,28 @@
   <div class="container">
       <div >
           <ul class="nav nav-tabs animation-title" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active btn-border-left" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Nosotros</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link btn-border-right" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-              </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active btn-border-left blob-btn" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                Nosotros
+                <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                </span>
+                </span>
+                </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link btn-border-right blob-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                Profile
+                <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                </span>
+                </span>
+                </button>
+                </li>
             </ul>
             <div class="tab-content" id="myTabContent">
               <div class="
@@ -150,11 +186,11 @@
                       sunt mollitia labore illum quo incidun
                   </p>
               </div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <h1 class="animation-title">Maxime Veritatis Numquam</h1><br>
-                  <h3 class="animation-title">Illum Rem Vel</h3>
+              <div class="tab-pane fade content__tabs" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <h1 class="animation-title content__tabs--title">Maxime Veritatis Numquam</h1><br>
+                  <h3 class="animation-title content__tabs--sub-title">Illum Rem Vel</h3>
                   <br>
-                  <p class="animation-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <p class="animation-title content__tabs--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Temporibus minus illum rem vel deleniti? Asperiores ut, 
                       sunt mollitia labore illum quo incidunt? Quod alias dolore, 
                       animi odio maxime veritatis numquam?.
@@ -256,7 +292,14 @@
     <div class="container support">
         <div class="doubts">
             <span>¿Te quedaron dudas?</span>
-            <button class="btn chat-w">Chatea con Nosotros</button>
+            <button class="btn chat-w blob-btn">Chatea con Nosotros
+                <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    </span>
+                    </span>
+            </button>
         </div>
         <div class="contact-details">
             <div class="email-address">
@@ -344,6 +387,17 @@
     </div>
 
 </footer>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+    <filter id="goo">
+    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+    </feColorMatrix>
+    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+    </filter>
+    </defs>
+    </svg>
 <!--import scripts-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src=" https://unpkg.com/ionicons@5.0.0/dist/ionicons.js "> </script>

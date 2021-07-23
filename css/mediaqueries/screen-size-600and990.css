@@ -19,6 +19,8 @@
 @media (min-width: 600px) and (max-width: 990px) {
   .container-fluid {
     display: block; }
+  .bg {
+    background-size: 100% 115px; }
   .section-2 {
     width: 50px;
     transform: rotate(25deg) translate(-450px, 0px); }

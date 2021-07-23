@@ -63,17 +63,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-}
-
-.btn-registar {
-    background: $secondary;
-    color: $white;
-    outline: none;
-
-    &:hover {
-        background: $secondary-dark;
-        color: $white;
-    }
+    object-fit: cover;
 }
 
 .btn-check:focus+.btn,

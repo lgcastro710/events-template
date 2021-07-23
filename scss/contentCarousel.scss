@@ -6,6 +6,10 @@
     overflow: hidden;
     height: 500px;
     display: flex;
+
+    img {
+        object-fit: cover;
+    }
 }
 
 .overly {

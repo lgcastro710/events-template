@@ -21,6 +21,8 @@
   overflow: hidden;
   height: 500px;
   display: flex; }
+  .contenedor img {
+    object-fit: cover; }
 
 .overly {
   position: absolute;

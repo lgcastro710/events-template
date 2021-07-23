@@ -7,6 +7,17 @@
     display: block;
   }
 
+  //banner
+  .bg {
+    height: 90vh;
+    background-size: 100% 60px;
+  }
+
+  .contenedor {
+    height: 400px;
+
+  }
+
   //contentCarousel  
   .section-1 {
     width: 140px;
@@ -40,6 +51,8 @@
   .bg-section {
     padding: 50px 0;
   }
+
+
 
   //talks
   .talks__gallery {
