@@ -50,8 +50,11 @@
   align-items: center;
   display: flex;
   padding: 0 20px;
-  border-left: 1px solid;
-  font-size: 1rem; }
+  border-left: 1px solid; }
+  .email-address a {
+    font-size: 1rem;
+    color: #292828;
+    text-decoration: none; }
 
 .other-contact {
   border-left: 1px solid;
@@ -64,7 +67,7 @@
   font-size: 1.4rem;
   font-weight: bold; }
 
-.whatsapp span {
+.whatsapp a {
   text-decoration: none; }
 
 .footer {
@@ -103,7 +106,7 @@
       font-size: 30px;
       margin-right: 10px;
       color: #fff; }
-    .redes ul li span {
+    .redes ul li a {
       text-decoration: none;
       color: #fff; }
 

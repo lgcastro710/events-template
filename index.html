@@ -36,19 +36,19 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="/#tabs">Información</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="/#talks">Charlas</a>
             </li>
+           
             <li class="nav-item dropdown p-2">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
+                Ver más
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="/#news">Próximos</a></li>
+                <li><a class="dropdown-item" href="/#footer">Contáctanos</a></li>                
               </ul>
             </li>
             <li class="nav-item p-2">
@@ -56,7 +56,7 @@
                 Registrar</button>
             </li>
             <li class="nav-item p-2">
-              <img class="img-profile" src="assets/images/header/profile.jpg" alt="">
+              <img class="img-profile" object-fit: cover; src="assets/images/header/profile.jpg" alt="">
             </li>
           </ul>
         </div>
@@ -73,7 +73,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="contenedor">
-    <img src="/assets/images/event-expo.jpg" class="d-block w-100" alt="...">
+    <img src="/assets/images/event-expo.jpg" object-fit: cover; class="d-block w-100" alt="...">
     <div class="section-1"></div>
     <div class="section-2"></div>
     <div class="section-3"></div>
@@ -81,14 +81,14 @@
     
 </div>           
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h1>First slide label</h1>
               <p>Some representative placeholder content for the first slide.</p>
               <button class="btn btn-ver">Ver más</button>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">  
             <div class="contenedor">
-    <img src="/assets/images/event-fe.jpg" class="d-block w-100" alt="..."> 
+    <img src="/assets/images/event-fe.jpg" object-fit: cover; class="d-block w-100" alt="..."> 
     <div class="section-1"></div>
     <div class="section-2"></div>
     <div class="section-3"></div>
@@ -96,7 +96,7 @@
     
 </div>          
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h1>Second slide label</h1>
               <p>Some representative placeholder content for the second slide.</p>
             <button class="btn btn-ver">Ver más</button>
             </div>
@@ -119,7 +119,7 @@
   
 </section>
 
-    <div class="bg-section">
+    <div class="bg-section" id="tabs">
   <div class="container">
       <div >
           <ul class="nav nav-tabs animation-title" id="myTab" role="tablist">
@@ -186,7 +186,8 @@
     </div>
     <!--Waves end-->
 </div>
-    <section class="talks"
+</div>
+    <section class="talks" id="talks"
      ng-app="myApp" ng-controller="myCtrl">
     <div class="container">
         <div class="talks__categories">
@@ -217,7 +218,7 @@
         </ul>
     </div>
 </section>
-    <section class="news">
+    <section class="news" id="news">
     <div class="container">
         <h1 class="news__title animation-title">Lo que se viene</h1>
         <div class="owl-carousel owl-theme">
@@ -235,7 +236,7 @@
     </section>
 
 
-<div class="contac">
+<div class="contac" id="footer">
     <div class="container support">
         <div class="doubts">
             <span>¿Te quedaron dudas?</span>
@@ -243,13 +244,16 @@
         </div>
         <div class="contact-details">
             <div class="email-address">
-                <span>contacto@real-test.com</span>
+                <a href="mailto:contacto@real-test.com">contacto@real-test.com</a>
             </div>
             <div class="other-contact">
                 <p>Lunes a viernes de 10-13 / 15-18 h</p>
                 <div class="whatsapp">
                     <i class="fab fa-whatsapp"></i>
-                    <span>Escribinos al <a href="">+5491121711009</a></span>
+                    <span>Escribinos al
+                        <a href="tel:+5491121711009"> +5491121711009</a>
+                    </span>
+                    
                 </div>
             </div>
         </div>
@@ -283,10 +287,13 @@
                     <a class=""  href="#">Home</a>
                   </li>
                   <li class="">
-                    <a class="" href="#">Features</a>
+                    <a class="" href="/#tabs">Información</a>
                   </li>
                   <li class="">
-                    <a class="" href="#">Pricing</a>
+                    <a class="" href="/#talks">Charlas</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="/#news">Próximos</a>
                   </li>
             </ul>
         </div>
@@ -295,19 +302,19 @@
             <ul>
                 <li>
                     <i class="fab fa-facebook-square"></i>
-                    <span>Facebook</span>
+                    <a href="http://www.facebook.com" target="_blank">Facebook</a>
                 </li>
                 <li>
                     <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
+                    <a href="http://www.instagram.com" target="_blank">Instagram</a>
                 </li>
                 <li>
                     <i class="fab fa-linkedin"></i>
-                    <span>Linkedin</span>
+                    <a href="http://www.linkendin.com" target="_blank">Linkedin</a>
                 </li>
                 <li>
                     <i class="fab fa-twitter-square"></i>
-                    <span>Twitter</span>
+                    <a href="http://www.twitter.com" target="_blank">Twitter</a>
                 </li>
             </ul>
         </div>

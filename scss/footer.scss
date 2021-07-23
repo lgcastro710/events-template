@@ -45,7 +45,12 @@
     display: flex;
     padding: 0 20px;
     border-left: 1px solid;
-    font-size: 1rem;
+
+    a {
+        font-size: 1rem;
+        color: $gray-dark;
+        text-decoration: none;
+    }
 }
 
 .other-contact {
@@ -64,8 +69,9 @@
         font-weight: bold;
     }
 
-    span {
+    a {
         text-decoration: none;
+
     }
 }
 
@@ -121,7 +127,7 @@
                 color: $white;
             }
 
-            span {
+            a {
                 text-decoration: none;
                 color: $white;
             }

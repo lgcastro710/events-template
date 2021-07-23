@@ -54,7 +54,9 @@
   .carousel-dark .carousel-caption h5 {
     font-size: 3rem; }
   .carousel-dark .carousel-caption p {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    background: #ffffff8f;
+    padding: 10px 0; }
 
 .content-corousel {
   display: flex;
