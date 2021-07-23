@@ -6,6 +6,41 @@
         display: block;
     }
 
+    //contentCarousel    
+    .section-2 {
+        width: 50px;
+        transform: rotate(25deg) translate(-450px, 0px);
+    }
+
+    .section-3 {
+        width: 60%;
+        transform: rotate(25deg) translate(-160px, 0px);
+    }
+
+    .section-4 {
+        width: 70px;
+    }
+
+    .carousel-dark .carousel-caption {
+        bottom: 10%;
+
+        p {
+            font-size: 1rem;
+
+        }
+    }
+
+    //tabs
+    .bg-section {
+        padding: 50px 0;
+    }
+
+    //talks
+    .talks__gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    // footer
     .support {
         display: block;
     }

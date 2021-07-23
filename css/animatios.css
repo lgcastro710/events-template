@@ -18,3 +18,47 @@
   -ms-transform: none;
   -o-transform: none;
   transform: none; }
+
+.cursor-floating {
+  z-index: 10000;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #585757;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.03s; }
+
+.cursor-floating-core {
+  z-index: 10000;
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #585757;
+  background-color: #585757;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.07s; }
+
+.cursor-floating-in-hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  border: 2px rigid #585757;
+  background-color: #71d9bf;
+  opacity: 0.3; }
+
+.cursor-floating-core-in-hover {
+  opacity: 0; }
+
+.cursor-floating-in-hover:before {
+  display: block;
+  content: ' ';
+  background-image: url("../assets/pulse.svg");
+  height: 122px;
+  width: 122px;
+  transform: translate(-22px, -22px); }

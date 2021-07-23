@@ -72,7 +72,7 @@
 
 .footer {
   background: #292828;
-  padding: 100px 40px 10px;
+  padding: 75px 40px 10px;
   box-sizing: border-box; }
 
 .footer-content {
@@ -123,7 +123,7 @@
 
 .content-waves {
   position: relative;
-  background-color: #ffffff;
+  background-color: #DEDEDE;
   color: white; }
 
 .waves {
@@ -134,6 +134,10 @@
   /*Fix for safari gap*/
   min-height: 200px;
   max-height: 250px; }
+
+.waves-bg {
+  height: 175px;
+  width: 100%; }
 
 /* Animation */
 .parallax > use {

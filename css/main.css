@@ -189,7 +189,8 @@ h4 {
   .carousel-dark .carousel-caption p {
     font-size: 1.5rem;
     background: #ffffff8f;
-    padding: 10px 0; }
+    padding: 10px;
+    text-align: left; }
 
 .content-corousel {
   display: flex;
@@ -621,7 +622,7 @@ h4 {
 
 .footer {
   background: #292828;
-  padding: 100px 40px 10px;
+  padding: 75px 40px 10px;
   box-sizing: border-box; }
 
 .footer-content {
@@ -672,7 +673,7 @@ h4 {
 
 .content-waves {
   position: relative;
-  background-color: #ffffff;
+  background-color: #DEDEDE;
   color: white; }
 
 .waves {
@@ -683,6 +684,10 @@ h4 {
   /*Fix for safari gap*/
   min-height: 200px;
   max-height: 250px; }
+
+.waves-bg {
+  height: 175px;
+  width: 100%; }
 
 /* Animation */
 .parallax > use {
@@ -716,6 +721,71 @@ h4 {
     height: 40px;
     min-height: 40px; } }
 
+.effect > div {
+  opacity: 0;
+  -webkit-transform: translateY(-150px);
+  -moz-transform: translateY(-150px);
+  -ms-transform: translateY(-150px);
+  -o-transform: translateY(-150px);
+  transform: translateY(-150px);
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
+
+.effect.showing > div {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+
+.cursor-floating {
+  z-index: 10000;
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #585757;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.03s; }
+
+.cursor-floating-core {
+  z-index: 10000;
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #585757;
+  background-color: #585757;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.07s; }
+
+.cursor-floating-in-hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  border: 2px rigid #585757;
+  background-color: #71d9bf;
+  opacity: 0.3; }
+
+.cursor-floating-core-in-hover {
+  opacity: 0; }
+
+.cursor-floating-in-hover:before {
+  display: block;
+  content: ' ';
+  background-image: url("../assets/pulse.svg");
+  height: 122px;
+  width: 122px;
+  transform: translate(-22px, -22px); }
+
 @font-face {
   font-family: "Georgia";
   src: url("../assets/fonts/georgia.ttf"); }
@@ -735,10 +805,30 @@ h4 {
 @media (min-width: 315px) and (max-width: 600px) {
   .container-fluid {
     display: block; }
+  .section-1 {
+    width: 140px; }
+  .section-2 {
+    width: 40px;
+    transform: rotate(25deg) translate(-470px, 0px); }
+  .section-3 {
+    width: 75%;
+    transform: rotate(25deg) translate(-110px, 0px); }
+  .section-4 {
+    width: 40px; }
+  .carousel-dark .carousel-caption {
+    bottom: 10%; }
+    .carousel-dark .carousel-caption p {
+      font-size: 1rem; }
+  .bg-section {
+    padding: 50px 0; }
+  .talks__gallery {
+    grid-template-columns: repeat(1, 1fr); }
   .support {
     display: block; }
   .doubts {
-    padding: 10px; }
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start; }
     .doubts span {
       padding: 0 20px 0 0; }
   .contact-details {
@@ -774,6 +864,22 @@ h4 {
 @media (min-width: 600px) and (max-width: 990px) {
   .container-fluid {
     display: block; }
+  .section-2 {
+    width: 50px;
+    transform: rotate(25deg) translate(-450px, 0px); }
+  .section-3 {
+    width: 60%;
+    transform: rotate(25deg) translate(-160px, 0px); }
+  .section-4 {
+    width: 70px; }
+  .carousel-dark .carousel-caption {
+    bottom: 10%; }
+    .carousel-dark .carousel-caption p {
+      font-size: 1rem; }
+  .bg-section {
+    padding: 50px 0; }
+  .talks__gallery {
+    grid-template-columns: repeat(3, 1fr); }
   .support {
     display: block; }
   .doubts {

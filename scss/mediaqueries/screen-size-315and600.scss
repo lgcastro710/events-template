@@ -7,12 +7,54 @@
     display: block;
   }
 
+  //contentCarousel  
+  .section-1 {
+    width: 140px;
+  }
+
+  .section-2 {
+    width: 40px;
+    transform: rotate(25deg) translate(-470px, 0px);
+  }
+
+  .section-3 {
+    width: 75%;
+    transform: rotate(25deg) translate(-110px, 0px);
+
+  }
+
+  .section-4 {
+    width: 40px;
+  }
+
+  .carousel-dark .carousel-caption {
+    bottom: 10%;
+
+    p {
+      font-size: 1rem;
+
+    }
+  }
+
+  //tabs
+  .bg-section {
+    padding: 50px 0;
+  }
+
+  //talks
+  .talks__gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  // footer
   .support {
     display: block;
   }
 
   .doubts {
     padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
 
     span {
       padding: 0 20px 0 0;

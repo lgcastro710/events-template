@@ -71,13 +71,12 @@
 
     a {
         text-decoration: none;
-
     }
 }
 
 .footer {
     background: #292828;
-    padding: 100px 40px 10px;
+    padding: 75px 40px 10px;
     box-sizing: border-box;
 }
 
@@ -150,12 +149,11 @@
         color: $white;
         font-size: 12px;
     }
-
 }
 
 .content-waves {
     position: relative;
-    background-color: #ffffff;
+    background-color: #DEDEDE;
     color: white;
 }
 
@@ -169,8 +167,12 @@
     max-height: 250px;
 }
 
-/* Animation */
+.waves-bg {
+    height: 175px;
+    width: 100%;
+}
 
+/* Animation */
 .parallax>use {
     animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }

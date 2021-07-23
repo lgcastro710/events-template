@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    
+    <div class="cursor-floating"></div>
+<div class="cursor-floating-core"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <div class="container-fluid">
@@ -36,10 +37,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link" href="/#tabs">Información</a>
+              <a class="nav-link" href="#tabs">Información</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link" href="/#talks">Charlas</a>
+              <a class="nav-link" href="#talks">Charlas</a>
             </li>
            
             <li class="nav-item dropdown p-2">
@@ -47,8 +48,8 @@
                 Ver más
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/#news">Próximos</a></li>
-                <li><a class="dropdown-item" href="/#footer">Contáctanos</a></li>                
+                <li><a class="dropdown-item" href="#news">Próximos</a></li>
+                <li><a class="dropdown-item" href="#footer">Contáctanos</a></li>                
               </ul>
             </li>
             <li class="nav-item p-2">
@@ -73,31 +74,33 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="contenedor">
-    <img src="/assets/images/event-expo.jpg" object-fit: cover; class="d-block w-100" alt="...">
+    <img src="assets/images/event-expo.jpg" object-fit: cover; class="d-block w-100" alt="...">
     <div class="section-1"></div>
     <div class="section-2"></div>
     <div class="section-3"></div>
     <div class="section-4"></div>
     
 </div>           
-            <div class="carousel-caption d-none d-md-block">
-              <h1>First slide label</h1>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption d-md-block">
+              <h1>Finanzas</h1>
+              <p>Las finanzas estudian cómo los agentes económicos (empresas, familias o Estado) deben tomar 
+                decisiones de inversión, ahorro y gasto en condiciones de incertidumbre.</p>
               <button class="btn btn-ver">Ver más</button>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="10000">  
             <div class="contenedor">
-    <img src="/assets/images/event-fe.jpg" object-fit: cover; class="d-block w-100" alt="..."> 
+    <img src="assets/images/event-fe.jpg" object-fit: cover; class="d-block w-100" alt="..."> 
     <div class="section-1"></div>
     <div class="section-2"></div>
     <div class="section-3"></div>
     <div class="section-4"></div>
     
 </div>          
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Second slide label</h1>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-caption d-md-block">
+              <h1>Social Media</h1>
+              <p>Los medios sociales se basan en la influencia y la interacción entre
+                 una audiencia pública que es cada vez más inteligente y participativa.</p>
             <button class="btn btn-ver">Ver más</button>
             </div>
           </div>
@@ -124,7 +127,7 @@
       <div >
           <ul class="nav nav-tabs animation-title" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active btn-border-left" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                <button class="nav-link active btn-border-left" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Nosotros</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link btn-border-right" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
@@ -133,8 +136,8 @@
             <div class="tab-content" id="myTabContent">
               <div class="
               content__tabs tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <h1 class="animation-title content__tabs--title">Lorem ipsum dolor</h1><br>
-                  <h3 class="animation-title content__tabs--sub-title">Consectetur adipisicing elit</h3>
+                  <h1 class="animation-title content__tabs--title">Real Trends</h1><br>
+                  <h3 class="animation-title content__tabs--sub-title">¿Quienes somos?</h3>
                   <br>
                   <p class="animation-title content__tabs--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Temporibus minus illum rem vel deleniti? Asperiores ut, 
@@ -193,6 +196,7 @@
         <div class="talks__categories">
             <button
                     ng-class="[{
+                        'onHoverMouseEffect': true,
                     'talks__categories--item': true,
                     'talks__categories--item-active': category === searchBtn
                     }]"
@@ -236,6 +240,18 @@
     </section>
 
 
+<div>
+    <svg class="waves-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g>
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#dedede" />
+    </g>
+    </svg>
+    </div>
+    
 <div class="contac" id="footer">
     <div class="container support">
         <div class="doubts">
@@ -287,13 +303,13 @@
                     <a class=""  href="#">Home</a>
                   </li>
                   <li class="">
-                    <a class="" href="/#tabs">Información</a>
+                    <a class="" href="#tabs">Información</a>
                   </li>
                   <li class="">
-                    <a class="" href="/#talks">Charlas</a>
+                    <a class="" href="#talks">Charlas</a>
                   </li>
                   <li class="">
-                    <a class="" href="/#news">Próximos</a>
+                    <a class="" href="#news">Próximos</a>
                   </li>
             </ul>
         </div>
@@ -520,6 +536,59 @@
     var icons = document.getElementsByClassName("talks__categories--item");
     getAnimation(icons, true)
   })
+</script>
+<!--
+cursor fltante-->
+<script>
+  function docReady(fn) {
+// see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+// call on next available tick
+      setTimeout(fn, 1);
+    } else {
+      document.addEventListener("DOMContentLoaded", fn);
+    }
+  }
+  docReady(function () {
+// DOM is loaded and ready for manipulation here
+    var cursor = document.querySelector('.cursor-floating');
+    var cursor2 = document.querySelector('.cursor-floating-core');
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    })
+    var elemementsToHoverByTabName = document.getElementsByTagName('a');
+    for (var i = 0; i < elemementsToHoverByTabName.length; i++) {
+      elemementsToHoverByTabName[i].addEventListener("mouseover", function (e) {
+        var cursor = document.querySelector('.cursor-floating');
+        var cursor2 = document.querySelector('.cursor-floating-core');
+        cursor.classList.add('cursor-floating-in-hover');
+        cursor2.classList.add('cursor-floating-core-in-hover');
+      });
+      elemementsToHoverByTabName[i].addEventListener("mouseleave", function (e) {
+        var cursor = document.querySelector('.cursor-floating');
+        var cursor2 = document.querySelector('.cursor-floating-core');
+        cursor.classList.remove('cursor-floating-in-hover');
+        cursor2.classList.remove('cursor-floating-core-in-hover');
+      });
+    }
+    setTimeout(function () {
+      var elemementsToHoverByClassName = document.getElementsByClassName('onHoverMouseEffect');
+      for (var i = 0; i < elemementsToHoverByClassName.length; i++) {
+        elemementsToHoverByClassName[i].addEventListener("mouseover", function (e) {
+          var cursor = document.querySelector('.cursor-floating');
+          var cursor2 = document.querySelector('.cursor-floating-core');
+          cursor.classList.add('cursor-floating-in-hover');
+          cursor2.classList.add('cursor-floating-core-in-hover');
+        });
+        elemementsToHoverByClassName[i].addEventListener("mouseleave", function (e) {
+          var cursor = document.querySelector('.cursor-floating');
+          var cursor2 = document.querySelector('.cursor-floating-core');
+          cursor.classList.remove('cursor-floating-in-hover');
+          cursor2.classList.remove('cursor-floating-core-in-hover');
+        });
+      }
+    }, 500)
+  });
 </script>
 </body>
 

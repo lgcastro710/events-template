@@ -191,3 +191,56 @@
     getAnimation(icons, true)
   })
 </script>
+<!--
+cursor fltante-->
+<script>
+  function docReady(fn) {
+// see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+// call on next available tick
+      setTimeout(fn, 1);
+    } else {
+      document.addEventListener("DOMContentLoaded", fn);
+    }
+  }
+  docReady(function () {
+// DOM is loaded and ready for manipulation here
+    var cursor = document.querySelector('.cursor-floating');
+    var cursor2 = document.querySelector('.cursor-floating-core');
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    })
+    var elemementsToHoverByTabName = document.getElementsByTagName('a');
+    for (var i = 0; i < elemementsToHoverByTabName.length; i++) {
+      elemementsToHoverByTabName[i].addEventListener("mouseover", function (e) {
+        var cursor = document.querySelector('.cursor-floating');
+        var cursor2 = document.querySelector('.cursor-floating-core');
+        cursor.classList.add('cursor-floating-in-hover');
+        cursor2.classList.add('cursor-floating-core-in-hover');
+      });
+      elemementsToHoverByTabName[i].addEventListener("mouseleave", function (e) {
+        var cursor = document.querySelector('.cursor-floating');
+        var cursor2 = document.querySelector('.cursor-floating-core');
+        cursor.classList.remove('cursor-floating-in-hover');
+        cursor2.classList.remove('cursor-floating-core-in-hover');
+      });
+    }
+    setTimeout(function () {
+      var elemementsToHoverByClassName = document.getElementsByClassName('onHoverMouseEffect');
+      for (var i = 0; i < elemementsToHoverByClassName.length; i++) {
+        elemementsToHoverByClassName[i].addEventListener("mouseover", function (e) {
+          var cursor = document.querySelector('.cursor-floating');
+          var cursor2 = document.querySelector('.cursor-floating-core');
+          cursor.classList.add('cursor-floating-in-hover');
+          cursor2.classList.add('cursor-floating-core-in-hover');
+        });
+        elemementsToHoverByClassName[i].addEventListener("mouseleave", function (e) {
+          var cursor = document.querySelector('.cursor-floating');
+          var cursor2 = document.querySelector('.cursor-floating-core');
+          cursor.classList.remove('cursor-floating-in-hover');
+          cursor2.classList.remove('cursor-floating-core-in-hover');
+        });
+      }
+    }, 500)
+  });
+</script>
