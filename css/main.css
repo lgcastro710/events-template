@@ -220,7 +220,7 @@ h4 {
   margin-top: 74px;
   height: 100vh;
   background-image: url(https://blog.real-trends.com/wp-content/uploads/2020/03/01-portada.png);
-  background-size: 100% 180px;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center; }
@@ -868,9 +868,6 @@ h4 {
 @media (min-width: 315px) and (max-width: 600px) {
   .container-fluid {
     display: block; }
-  .bg {
-    height: 90vh;
-    background-size: 100% 60px; }
   .contenedor {
     height: 400px; }
   .section-1 {
@@ -932,8 +929,6 @@ h4 {
 @media (min-width: 600px) and (max-width: 990px) {
   .container-fluid {
     display: block; }
-  .bg {
-    background-size: 100% 115px; }
   .section-2 {
     width: 50px;
     transform: rotate(25deg) translate(-450px, 0px); }

@@ -19,9 +19,6 @@
 @media (min-width: 315px) and (max-width: 600px) {
   .container-fluid {
     display: block; }
-  .bg {
-    height: 90vh;
-    background-size: 100% 60px; }
   .contenedor {
     height: 400px; }
   .section-1 {

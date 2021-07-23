@@ -20,7 +20,7 @@
   margin-top: 74px;
   height: 100vh;
   background-image: url(https://blog.real-trends.com/wp-content/uploads/2020/03/01-portada.png);
-  background-size: 100% 180px;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center; }
